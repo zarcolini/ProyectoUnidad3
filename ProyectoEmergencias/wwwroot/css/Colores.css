@@ -1,0 +1,15 @@
+﻿a.colores {
+    color: #333333
+}
+
+    a.colores:active {
+        color: #666666
+    }
+
+    a.colores:link {
+        color: #999999
+    }
+
+    a.colores:visited {
+        color: #CCCCCC
+    }
