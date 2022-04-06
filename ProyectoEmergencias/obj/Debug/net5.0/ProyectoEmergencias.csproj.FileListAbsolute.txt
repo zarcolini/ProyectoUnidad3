@@ -440,3 +440,5 @@ C:\proyectos\prueba1\ProyectoEmergencias\ProyectoEmergencias\obj\Debug\net5.0\Ra
 C:\proyectos\prueba1\ProyectoEmergencias\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Sintomas\Details.cshtml.g.cs
 C:\proyectos\prueba1\ProyectoEmergencias\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Sintomas\Edit.cshtml.g.cs
 C:\proyectos\prueba1\ProyectoEmergencias\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Sintomas\Index.cshtml.g.cs
+C:\Users\ekt\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ProyectoEmergencias.dll
+C:\Users\ekt\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ProyectoEmergencias.pdb

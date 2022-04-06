@@ -18,7 +18,12 @@ namespace ProyectoEmergencias.Controllers
         {
             _context = context;
         }
-
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Paciente>> GetOne(int id)
+        {
+            var paciente = await _context.Pacientes.Include(s => s.Sintomas).FirstOrDefaultAsync(l => l.PacienteID == id);
+            return paciente;
+        }
         // GET: Pacientes
         public async Task<IActionResult> Index()
         {
