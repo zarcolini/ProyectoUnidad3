@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProyectoEmergencias",
-    "\\ProyectoEmergencias\\Controllers",
-    "\\ProyectoEmergencias\\Models"
+    "\\ProyectoEmergencias"
   ],
-  "SelectedNode": "\\ProyectoEmergencias\\Controllers\\PacientesController.cs",
+  "SelectedNode": "\\ProyectoEmergencias\\ProyectoEmergencias.csproj",
   "PreviewInSolutionExplorer": false
 }

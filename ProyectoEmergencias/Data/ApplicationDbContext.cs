@@ -15,6 +15,7 @@ namespace ProyectoEmergencias
 
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Sintoma> Sintomas { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
 
         public static implicit operator ApplicationDbContext(SqlConnection v)
         {

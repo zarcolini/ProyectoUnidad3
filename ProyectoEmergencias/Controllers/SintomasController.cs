@@ -22,7 +22,7 @@ namespace ProyectoEmergencias.Controllers
         // GET: Sintomas
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Sintomas.Include(s => s.Paciente);
+            var applicationDbContext = _context.Sintomas.Include(s => s.Doctor).Include(s => s.Paciente);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -35,6 +35,7 @@ namespace ProyectoEmergencias.Controllers
             }
 
             var sintoma = await _context.Sintomas
+                .Include(s => s.Doctor)
                 .Include(s => s.Paciente)
                 .FirstOrDefaultAsync(m => m.SintomasID == id);
             if (sintoma == null)
@@ -48,6 +49,7 @@ namespace ProyectoEmergencias.Controllers
         // GET: Sintomas/Create
         public IActionResult Create()
         {
+            ViewData["DoctorID"] = new SelectList(_context.Doctors, "DoctorID", "NombreDoc");
             ViewData["PacienteID"] = new SelectList(_context.Pacientes, "PacienteID", "Nombre");
             return View();
         }
@@ -57,7 +59,7 @@ namespace ProyectoEmergencias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SintomasID,Sintomas,Presion,Frecuencia_Cardiaca,Pulso,Temperatura,PacienteID")] Sintoma sintoma)
+        public async Task<IActionResult> Create([Bind("SintomasID,Sintomas,Presion,Frecuencia_Cardiaca,Pulso,Temperatura,PacienteID,DoctorID")] Sintoma sintoma)
         {
             if (ModelState.IsValid)
             {
@@ -65,6 +67,7 @@ namespace ProyectoEmergencias.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DoctorID"] = new SelectList(_context.Doctors, "DoctorID", "DoctorID", sintoma.DoctorID);
             ViewData["PacienteID"] = new SelectList(_context.Pacientes, "PacienteID", "PacienteID", sintoma.PacienteID);
             return View(sintoma);
         }
@@ -82,6 +85,7 @@ namespace ProyectoEmergencias.Controllers
             {
                 return NotFound();
             }
+            ViewData["DoctorID"] = new SelectList(_context.Doctors, "DoctorID", "DoctorID", sintoma.DoctorID);
             ViewData["PacienteID"] = new SelectList(_context.Pacientes, "PacienteID", "PacienteID", sintoma.PacienteID);
             return View(sintoma);
         }
@@ -91,7 +95,7 @@ namespace ProyectoEmergencias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("SintomasID,Sintomas,Presion,Frecuencia_Cardiaca,Pulso,Temperatura,PacienteID")] Sintoma sintoma)
+        public async Task<IActionResult> Edit(int id, [Bind("SintomasID,Sintomas,Presion,Frecuencia_Cardiaca,Pulso,Temperatura,PacienteID,DoctorID")] Sintoma sintoma)
         {
             if (id != sintoma.SintomasID)
             {
@@ -118,6 +122,7 @@ namespace ProyectoEmergencias.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DoctorID"] = new SelectList(_context.Doctors, "DoctorID", "DoctorID", sintoma.DoctorID);
             ViewData["PacienteID"] = new SelectList(_context.Pacientes, "PacienteID", "PacienteID", sintoma.PacienteID);
             return View(sintoma);
         }
@@ -131,6 +136,7 @@ namespace ProyectoEmergencias.Controllers
             }
 
             var sintoma = await _context.Sintomas
+                .Include(s => s.Doctor)
                 .Include(s => s.Paciente)
                 .FirstOrDefaultAsync(m => m.SintomasID == id);
             if (sintoma == null)

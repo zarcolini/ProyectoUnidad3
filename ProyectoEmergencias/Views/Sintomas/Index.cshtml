@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table text-light ">
     <thead>
         <tr>
             <th>
@@ -29,6 +29,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Paciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctor)
             </th>
             <th></th>
         </tr>
@@ -52,7 +55,10 @@
                 @Html.DisplayFor(modelItem => item.Temperatura)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Paciente.Nombre)
+                @Html.DisplayFor(modelItem => item.Paciente.PacienteID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doctor.DoctorID)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.SintomasID">Edit</a> |
