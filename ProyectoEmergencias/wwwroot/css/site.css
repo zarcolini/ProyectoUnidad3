@@ -39,9 +39,9 @@ html {
     html {
         font-size: 16px;
         background-color: #000000;
-        background-image: url(../farmacias_similares_ayudar5_Tops_mexico_ESR-1024x818.png);
+        background-image: url(../bg.png);
         background-repeat: no-repeat;
-        background-size: unset;
+        background-position: center;
     }
 }
 
@@ -75,8 +75,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-color =#1b6ec2;
-    background-color: #000000;
+    
 }
 .footer {
     position: absolute;

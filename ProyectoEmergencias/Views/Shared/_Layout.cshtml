@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ProyectoEmergencias</title>
+    <title>@ViewData["Title"] - Emergencias</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/f49ff8c94c.js" crossorigin="anonymous"></script>
 </head>
-<body style="background-color:black;">
-    <header>
+<body style="background-color:transparent;">
+    <header style="background-color:transparent;" >
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">ProyectoEmergencias</a>
@@ -17,18 +18,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Pacientes" asp-action="Index">Ingresar un paciente</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Pacientes" asp-action="Index">   Ingresar un paciente  <i class="fas fa-bed-pulse"></i></a>
+                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Sintomas" asp-action="Index">Ingresar sintomas</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Sintomas" asp-action="Index">    Ingresar sintomas  <i class="fas fa-head-side-mask"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Doctors" asp-action="Index">Ingresar Doctores</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Doctors" asp-action="Index">    Ingresar Doctores  <i class="fas fa-user-doctor"></i></a>
                         </li>
                     </ul>
                 </div>

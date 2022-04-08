@@ -10,8 +10,8 @@ using ProyectoEmergencias;
 namespace ProyectoEmergencias.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220408015523_Initial")]
-    partial class Initial
+    [Migration("20220408062208_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

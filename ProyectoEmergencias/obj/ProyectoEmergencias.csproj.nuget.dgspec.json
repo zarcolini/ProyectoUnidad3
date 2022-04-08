@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\zarcolini\\ProyectoUnidad3\\ProyectoEmergencias\\ProyectoEmergencias.csproj": {}
+    "C:\\Users\\zaval\\Source\\Repos\\ProyectoUnidad3\\ProyectoEmergencias\\ProyectoEmergencias.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\zarcolini\\ProyectoUnidad3\\ProyectoEmergencias\\ProyectoEmergencias.csproj": {
+    "C:\\Users\\zaval\\Source\\Repos\\ProyectoUnidad3\\ProyectoEmergencias\\ProyectoEmergencias.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\zarcolini\\ProyectoUnidad3\\ProyectoEmergencias\\ProyectoEmergencias.csproj",
+        "projectUniqueName": "C:\\Users\\zaval\\Source\\Repos\\ProyectoUnidad3\\ProyectoEmergencias\\ProyectoEmergencias.csproj",
         "projectName": "ProyectoEmergencias",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\zarcolini\\ProyectoUnidad3\\ProyectoEmergencias\\ProyectoEmergencias.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\zarcolini\\ProyectoUnidad3\\ProyectoEmergencias\\obj\\",
+        "projectPath": "C:\\Users\\zaval\\Source\\Repos\\ProyectoUnidad3\\ProyectoEmergencias\\ProyectoEmergencias.csproj",
+        "packagesPath": "C:\\Users\\zaval\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zaval\\Source\\Repos\\ProyectoUnidad3\\ProyectoEmergencias\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zaval\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
