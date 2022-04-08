@@ -32,6 +32,9 @@ namespace ProyectoEmergencias.Migrations
                     b.Property<string>("NombreDoc")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("estado_servicio")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("DoctorID");
 
                     b.ToTable("Doctors");

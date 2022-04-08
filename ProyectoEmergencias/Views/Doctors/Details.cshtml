@@ -6,7 +6,7 @@
 
 <h1>Details</h1>
 
-<div class="text-light ">
+<div class="text-light">
     <h4>Doctor</h4>
     <hr />
     <dl class="row">
@@ -22,9 +22,15 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Especialidad)
         </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.estado_servicio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.estado_servicio)
+        </dd>
     </dl>
-</di>
+</div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.DoctorID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-danger">Regresar</a>
 </div>

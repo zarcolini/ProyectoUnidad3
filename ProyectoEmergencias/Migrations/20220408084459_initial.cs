@@ -14,7 +14,8 @@ namespace ProyectoEmergencias.Migrations
                     DoctorID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombreDoc = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Especialidad = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Especialidad = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    estado_servicio = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

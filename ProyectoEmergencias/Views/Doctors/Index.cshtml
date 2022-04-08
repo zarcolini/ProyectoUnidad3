@@ -4,12 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-outline-warning">Nuevo Registro</a>
 </p>
-<table class="table text-light ">
+<h1 style="text-align: center;">Registro de Doctores</h1>
+<table class="table text-light">
     <thead>
         <tr>
             <th>
@@ -17,6 +18,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Especialidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estado_servicio)
             </th>
             <th></th>
         </tr>
@@ -31,9 +35,12 @@
                 @Html.DisplayFor(modelItem => item.Especialidad)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.DoctorID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DoctorID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DoctorID">Delete</a>
+                @Html.DisplayFor(modelItem => item.estado_servicio)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DoctorID" class="btn btn-outline-light ">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DoctorID" class="btn btn-outline-light ">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DoctorID" class="btn btn-outline-light ">Delete</a>
             </td>
         </tr>
 }

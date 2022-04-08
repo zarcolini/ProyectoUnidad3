@@ -10,7 +10,7 @@ using ProyectoEmergencias;
 namespace ProyectoEmergencias.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220408062208_initial")]
+    [Migration("20220408084459_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,6 +32,9 @@ namespace ProyectoEmergencias.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NombreDoc")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("estado_servicio")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DoctorID");

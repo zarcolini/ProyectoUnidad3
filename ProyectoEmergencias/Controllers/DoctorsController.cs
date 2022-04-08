@@ -46,6 +46,7 @@ namespace ProyectoEmergencias.Controllers
         // GET: Doctors/Create
         public IActionResult Create()
         {
+            
             return View();
         }
 
@@ -54,7 +55,7 @@ namespace ProyectoEmergencias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DoctorID,NombreDoc,Especialidad")] Doctor doctor)
+        public async Task<IActionResult> Create([Bind("DoctorID,NombreDoc,Especialidad,estado_servicio")] Doctor doctor)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +87,7 @@ namespace ProyectoEmergencias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("DoctorID,NombreDoc,Especialidad")] Doctor doctor)
+        public async Task<IActionResult> Edit(int id, [Bind("DoctorID,NombreDoc,Especialidad,estado_servicio")] Doctor doctor)
         {
             if (id != doctor.DoctorID)
             {

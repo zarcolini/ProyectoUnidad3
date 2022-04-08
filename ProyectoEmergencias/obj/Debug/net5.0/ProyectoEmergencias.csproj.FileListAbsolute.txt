@@ -1305,11 +1305,6 @@ C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ProyectoEmergencias.TagHelpers.input.cache
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ProyectoEmergencias.TagHelpers.output.cache
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ProyectoEmergencias.RazorCoreGenerate.cache
-C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Create.cshtml.g.cs
-C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Delete.cshtml.g.cs
-C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Details.cshtml.g.cs
-C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Edit.cshtml.g.cs
-C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Index.cshtml.g.cs
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Pacientes\Create.cshtml.g.cs
@@ -1335,3 +1330,9 @@ C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ref\ProyectoEmergencias.dll
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ProyectoEmergencias.pdb
 C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ProyectoEmergencias.genruntimeconfig.cache
+C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\ProyectoEmergencias.csproj.AssemblyReference.cache
+C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Create.cshtml.g.cs
+C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Delete.cshtml.g.cs
+C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Details.cshtml.g.cs
+C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Edit.cshtml.g.cs
+C:\Users\zaval\Source\Repos\ProyectoUnidad3\ProyectoEmergencias\obj\Debug\net5.0\Razor\Views\Doctors\Index.cshtml.g.cs

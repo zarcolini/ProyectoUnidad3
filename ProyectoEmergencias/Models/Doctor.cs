@@ -10,6 +10,7 @@ namespace ProyectoEmergencias.Models
         public string NombreDoc { get; set; }
         public string Especialidad{ get; set; }
 
+        public string estado_servicio  { get; set; }
         public IEnumerable<Sintoma> Sintomas { get; set; }
 
     }
