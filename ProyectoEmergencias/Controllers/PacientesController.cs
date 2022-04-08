@@ -20,10 +20,21 @@ namespace ProyectoEmergencias.Controllers
         }
 
         // GET: Pacientes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Pacientes.ToListAsync());
+            var pacientes = from m in _context.Pacientes
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                pacientes = pacientes.Where(s => s.Nombre!.Contains(searchString));
+            }
+
+            return View(await pacientes.ToListAsync());
         }
+
+        
+        
 
         // GET: Pacientes/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -14,10 +14,10 @@ namespace ProyectoEmergencias.Models
         public int Temperatura { get; set; }
         public int PacienteID { get; set; }
 
-        [Display(Name="Paciente")]
+        [Display(Name = "Paciente")]
         [ForeignKey("PacienteID")]
         public Paciente Paciente { get; set; }
-        public int  DoctorID { get; set; }
+        public int DoctorID { get; set; }
 
         [Display(Name = "Doctor")]
         [ForeignKey("DoctorID")]
